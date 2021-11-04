@@ -4,7 +4,7 @@
     - name: Create a database container
       docker_container:
         name: database
-        image: isidoreporretti/tp-devops-epf-isidore:database
+        image: nathandoyen/tp-devops-epf-nathan:database
         env:
           POSTGRES_PASSWORD=pwd
           POSTGRES_USER=usr
