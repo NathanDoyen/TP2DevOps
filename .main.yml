@@ -4,7 +4,7 @@
     - name: Create a httpd container
       docker_container:
         name: httpd
-        image: isidoreporretti/tp-devops-epf-isidore:httpd
+        image: nathandoyen/tp-devops-epf-nathan:httpd
         networks:
           - name: "app-network"
         ports:
