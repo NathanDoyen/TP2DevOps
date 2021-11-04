@@ -1,9 +1,11 @@
 ---
-# tasks file for roles/app
+# tasks file for roles/proxy
 
-    - name: Create a simple-api container
+    - name: Create a httpd container
       docker_container:
-        name: backend
-        image: nathandoyen/tp-devops-epf-nathan:simple-api
+        name: httpd
+        image: isidoreporretti/tp-devops-epf-isidore:httpd
         networks:
           - name: "app-network"
+        ports:
+          - "80:80"
